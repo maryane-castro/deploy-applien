@@ -225,8 +225,8 @@ def menu(respostas_usuarios, escolha):
 
 def exibir_pergunta_e_alternativas(pergunta, alternativas):
     st.write(pergunta)
-    for i, alternativa in enumerate(alternativas):
-        st.write(f"{i+1}. {alternativa}")
+    #for i, alternativa in enumerate(alternativas):
+    #    st.write(f"{i+1}. {alternativa}")
 
 def main():
     st.title("Aplicativo de Respostas")
