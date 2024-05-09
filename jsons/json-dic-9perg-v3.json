@@ -1,0 +1,80 @@
+{
+	"perguntas": [
+	    "Como entender as emoções dos outros influencia as relações com amigos e familiares?",
+	    "Quais são suas reflexões sobre a morte, o significado da vida e a vastidão do universo?",
+	    "Como a opinião dos outros molda sua autoimagem?",
+	    "Como você equilibra seu uso financeiro entre luxo, necessidade e utilidade?",
+	    "Quais os principais aspectos do seu relacionamento com seus filhos?",
+	    "Como seus pontos fortes influenciam as relações com parceiros de negócios?",
+	    "Como sua aparência física influencia seu bem-estar emocional?",
+	    "Qual é o papel do seu cônjuge em sua jornada pessoal e emocional?",
+	    "Como as relações próximas e as histórias de vida delas afetam suas perspectivas?"
+	],
+
+	"alternativas": [
+	    [
+		"Converso com eles para confirmar meu engajamento e influência.",
+		"Compartilho memórias para criar conexão e entender emoções.",
+		"Valorizo a opinião deles para manter a coerência dos meus valores.",
+		"Minha conexão com eles é baseada na minha jornada profissional.",
+		"Minha vida é mais individual."
+	    ],
+	    [
+		"Humildade e admiração.",
+		"A morte faz refletir sobre o significado da vida.",
+		"Minha espiritualidade é meu guia.",
+		"A morte é o fim da existência.",
+		"Não sinto nada em particular."
+	    ],
+	    [
+		"Elogios e críticas me incentivam e inspiram a evolução.",
+		"Elogios me fortalecem. Críticas me desencorajam.",
+		"Elogios me validam. Críticas motivam o meu aprimoramento.",
+		"Elogios me aprimoram. Críticas impulsionam a autocrítica.",
+		"Opiniões alheias não afetam minha jornada."
+	    ],
+	    [
+		"Sigo meu planejamento financeiro.",
+		"Priorizo as necessidades básicas e reservo algo para luxos.",
+		"Priorizo luxo do que necessidade ou utilidade.",
+		"Não me preocupo com luxo, foco apenas no essencial.",
+		"Não tenho planejamento financeiro."
+	    ],
+	    [
+		"Valorizo a percepção e ideias deles.",
+		"Não compartilho muitos momentos com eles.",
+		"Participamos de atividades juntos, criando memórias e ensinando valores.",
+		"Inspiro meus filhos com minha história de sucesso.",
+		"Não tenho filhos."
+	    ],
+	    [
+		"Minha autoconfiança inspira sucesso no trabalho.",
+		"Minha comunicação persuasiva gera aprendizado e interação.",
+		"Minha afinidade com inovação beneficia meu trabalho.",
+		"Meu sucesso está ligado ao planejamento e continuidade dos negócios.",
+		"Não sou empresário(a) e/ou não tenho parceiros."
+	    ],
+	    [
+		"Minha confiança corporal melhora o meu bem-estar.",
+		"A prática esportiva fortalece-me, melhorando meu bem-estar emocional.",
+		"Opiniões alheias moldam minha identidade e bem-estar.",
+		"Sinto-me infeliz com meu corpo, incapaz de enfrentar desafios físicos.",
+		"A aceitação do meu físico afeta minha satisfação pessoal."
+	    ],
+	    [
+		"Meu parceiro(a) é uma fonte de apoio.",
+		"Meu parceiro(a) me acompanha em novas aventuras.",
+		"Nossas memórias testemunham nossa união e parceria.",
+		"Não compartilho sentimentos íntimos com meu parceiro(a).",
+		"Não tenho parceiro(a)."
+	    ],
+	    [
+    "Como espelho para minha jornada.",
+		"Geram reflexão e autenticidade, resultando em autoconhecimento.",
+		"Como um planejamento claro do futuro.",
+		"Moldam minha vida, gerando expectativas sobre minha imagem",
+		"Como espelho para minha jornada.",
+		"Não influenciam minha jornada."
+	    ]
+	]
+}

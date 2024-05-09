@@ -1,0 +1,8 @@
+nltk
+spacy
+numpy
+matplotlib
+scikit-learn
+
+
+#python -m spacy download pt_core_news_lg
