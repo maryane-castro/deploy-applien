@@ -267,12 +267,13 @@ def main():
     for resposta_usuario in respostas_usuarios:
         st.write(resposta_usuario)
 
-
-    if st.button("Mostrar Cartão Escolhido e Gráfico"):
-        escolha = st.selectbox(
+    escolha = st.selectbox(
             "Qual opção de respostas quer visualizar?",
             ["Média", "Média Ponderada com os Pesos de Fibonacci"]
         )
+    
+    if st.button("Mostrar Cartão Escolhido e Gráfico"):
+        
 
         if escolha == "Média":
             escolha = 1
