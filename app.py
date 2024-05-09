@@ -215,8 +215,11 @@ def menu(respostas_usuarios, escolha):
         vetor_medio = vetor_medio.reshape(1, -1)
         similaridades = cosine_similarity(vetor_medio, X)
         indices_top5 = np.argsort(similaridades[0])[-1:][::-1]
+        
 
         for indice in indices_top5:
+            st.write("\nUSUÁRIO:", usuario['user'])
+            st.write(f"Cartão (Média {media_type}):", originais[indice])
             print("\nUSUÁRIO:", usuario['user'])
             print(f"Cartão (Média {media_type}):", originais[indice])
 
