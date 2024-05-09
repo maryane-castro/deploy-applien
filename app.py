@@ -267,18 +267,21 @@ def main():
     for resposta_usuario in respostas_usuarios:
         st.write(resposta_usuario)
 
-    escolha = st.selectbox(
-        "Qual opção de respostas quer visualizar?",
-        ["Média", "Média Ponderada com os Pesos de Fibonacci"]
-    )
 
-    if escolha == "Média":
-        escolha = 1
-    elif escolha == "Média Ponderada com os Pesos de Fibonacci":
-        escolha = 2
+    if st.button("Mostrar Cartão Escolhido e Gráfico"):
+        escolha = st.selectbox(
+            "Qual opção de respostas quer visualizar?",
+            ["Média", "Média Ponderada com os Pesos de Fibonacci"]
+        )
 
-    if escolha:
-        menu(respostas_usuarios, escolha)
+        if escolha == "Média":
+            escolha = 1
+        elif escolha == "Média Ponderada com os Pesos de Fibonacci":
+            escolha = 2
+
+        if escolha:
+            menu(respostas_usuarios, escolha)
+
 
 if __name__ == "__main__":
     main()
