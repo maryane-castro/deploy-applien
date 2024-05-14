@@ -170,7 +170,8 @@ def vetorizar_respostas_usuario(respostas_usuario, max_features=7):
     return respostas_usuario_vetorizadas
 
 def plot_grafico_dispersao(X, aux, respostas_vetorizadas, vetor_medio_respostas):
-    tsne = TSNE(n_components=2, random_state=42, init='random')
+    perplexity = min(30, X.shape[0] // 3) 
+    tsne = TSNE(n_components=2, random_state=42, perplexity=perplexity, init='random')
     X_tsne = tsne.fit_transform(X.toarray())
     plt.figure(figsize=(10, 8))
     plt.scatter(X_tsne[:len(aux), 0], X_tsne[:len(aux), 1], color='blue', label='Frases')
