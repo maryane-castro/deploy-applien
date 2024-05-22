@@ -124,15 +124,15 @@ def alternativa(escolha_teste, respostas_usuarios):
             similaridades_nova = cosine_similarity(vetor_medio, novo_cartoes_vetorizados)
             indices_top5 = np.argsort(similaridades_nova[0])[:5][::-1]
 
-            lista_retorno = []
+            #lista_retorno = []
             for indice in range(len(indices_top5)):
                 save_vetores.append(novo_cartoes_vetorizados[indices_top5[indice]])
-                st.write(f"{indice+1} - {novo_cartoes[indices_top5[indice]]} --> {similaridades_nova[0][indices_top5[indice]]}")
-                resultado = f"{indice + 1} - {novo_cartoes[indices_top5[indice]]} --> {similaridades_nova[0][indices_top5[indice]]}"
-                lista_retorno.append(resultado)
+                st.write(f"{indice+1} - {novo_cartoes[indices_top5[indice]]}")
+                #resultado = f"{indice + 1} - {novo_cartoes[indices_top5[indice]]} --> {similaridades_nova[0][indices_top5[indice]]}"
+                #lista_retorno.append(resultado)
 
             plot_grafico_dispersao_teste1(X, aux, respostas_vetorizadas, vetor_medio, save_vetores)
-            return lista_retorno
+            #return lista_retorno
         
         elif escolha_teste == 2:
             respostas_vetorizadas = vetorizar_respostas_usuario(novas_respostas)
