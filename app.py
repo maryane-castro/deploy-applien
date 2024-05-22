@@ -158,7 +158,8 @@ def alternativa(escolha_teste, respostas_usuarios):
             plot_grafico_dispersao_teste2(X, aux, respostas_vetorizadas, vetor_medio)
 
 def main():
-    st.title("Perguntas e Alternativas")
+    st.image("assets/Design sem nome.png", width=500)
+    st.title("NUVEN AND MAPER")
     with open("jsons/json-dic-9perg-v3.json", "r") as file:
         data = json.load(file)
 
