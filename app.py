@@ -37,15 +37,11 @@ def vetorizar_respostas_usuario(respostas_usuario, max_features=7):
     return respostas_usuario_vetorizadas
 
 def plot_grafico_dispersao_teste1(X, aux, respostas_vetorizadas, vetor_medio_respostas, save_vetores):
-    try:
-        tsne = TSNE(n_components=2, random_state=42, init='random')
-        X_tsne = tsne.fit_transform(X.toarray())
-    except ValueError as e:
-        if "perplexity must be less than n_samples" in str(e):
-            st.error(f"{e}. \nO gráfico não será mostrado por conta que a perplexidade deve ser menor que n_samples, o que não ocorre nessa opção.")
-            return
-        else:
-            raise
+    n_samples = X.shape[0]  # Número de amostras
+    perplexity = min(30, n_samples - 1)  # Defina um limite superior para a perplexidade
+
+    tsne = TSNE(n_components=2, random_state=42, init='random', perplexity=perplexity)
+    X_tsne = tsne.fit_transform(X.toarray())
 
     plt.figure(figsize=(10, 8))
     plt.scatter(X_tsne[:len(aux), 0], X_tsne[:len(aux), 1], color='blue', label='Frases')
