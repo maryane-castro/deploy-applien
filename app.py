@@ -103,6 +103,7 @@ def alternativa(escolha_teste, respostas_usuarios):
         st.write(' '.join(list(usuario['respostas'].values())))
 
         if escolha_teste == 1: 
+            print('aqui um')
             respostas_vetorizadas = vetorizar_respostas_usuario(novas_respostas)
             vetor_medio = np.mean(respostas_vetorizadas.toarray(), axis=0)
             vetor_medio = vetor_medio.reshape(1, -1)
@@ -170,9 +171,9 @@ def main():
     st.header("Responda as perguntas")
 
     nome = st.text_input("Por favor, digite seu nome:")
-    escolha_teste = st.radio("Escolha o teste:", [1, 2], index=0)
+    escolha_teste = 1
 
-    if nome and escolha_teste:
+    if nome:
         respostas = {}
         for i in range(len(perguntas)):
             pergunta_escolhida = perguntas[i]
