@@ -155,8 +155,8 @@ def alternativa(escolha_teste, respostas_usuarios):
             plot_grafico_dispersao_teste2(X, aux, respostas_vetorizadas, vetor_medio)
 
 def main():
-    st.image("assets/logo_nuven.png", width=200)
-    st.title("NUVEN")
+    st.image("assets/logocompartilhda.png", width=500)
+    st.title("NUVEN E WEDJA PSICOLOGIA")
     with open("jsons/json-dic-9perg-v3.json", "r") as file:
         data = json.load(file)
 
