@@ -28,7 +28,7 @@ class RetirarCartNegacao:
                               ['filhos', 'filho', 'filhos,'],
                               ['empresário', 'parceiros', 'parcerias', 'subordinados', 'empresarial', 'empresario', 'empresarios', 'empresários', 'empresa', 'parceria'],
                               ['físico', 'fisicamente','espelho', 'roupas', 'fisico'],
-                              ['parceiro(a)', 'conjugue'],
+                              ['parceiro(a)', 'conjugue', 'companheiro', 'companheiro(a)'],
                               ['história', 'historia']]
 
         indices_a_remover = []
