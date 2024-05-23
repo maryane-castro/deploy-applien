@@ -232,7 +232,7 @@ def exibir_pergunta_e_alternativas(pergunta, alternativas):
     #for i, alternativa in enumerate(alternativas):
     #    st.write(f"{i+1}. {alternativa}")
 
-def main():
+def main_v1():
     st.title("Aplicativo de Respostas")
 
     with open("jsons/json-dic-9perg-v3.json", "r") as file:
@@ -286,4 +286,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main_v1()
